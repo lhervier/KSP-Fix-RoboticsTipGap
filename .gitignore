@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixRoboticsTipGap/*.dll
+GameData/*.zip
+__pycache__/
