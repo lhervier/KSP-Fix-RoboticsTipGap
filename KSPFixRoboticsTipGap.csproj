@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixRoboticsTipGap</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.roboticstipgap</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Anchors the attachment of a part carried by the moving side of a robotic part at their attach node, so that a docking port at the tip of a piston stays on it instead of hanging away under load</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixRoboticsTipGap</OutputPath>
