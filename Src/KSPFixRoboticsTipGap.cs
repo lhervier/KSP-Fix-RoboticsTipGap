@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.roboticstipgap
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixRoboticsTipGap).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixRoboticsTipGap).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"anchorJointAtNode {Settings.AnchorJointAtNode}, log level {Log.Level}");
             if (!Settings.AnchorJointAtNode)
             {
